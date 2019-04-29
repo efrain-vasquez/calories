@@ -22,8 +22,6 @@ class App extends Component {
     this.getData('/userInfo')
   }
 
-
-
   getData (url = '') {
     return fetch(url)
       .then(response => response.json())
@@ -59,7 +57,6 @@ class App extends Component {
       .catch(err => console.error(err))
   }
 
-
   render () {
     const { Info } = this.state
     return (
@@ -68,8 +65,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/BMI' render={(props) => <BMI {...props} postData={this.postData} />} />
-            <Route exact path='/TotalCalories' component={TotalCalories} />
-            <Route exact path='/FoodSearch' render={(props) => <FoodSearch {...props} postData={this.postData} />} />
+            <Route exact path='/TotalCalories' component={TotalCalories} postData={this.postData} />
           </Switch>
         </div>
       </BrowserRouter>

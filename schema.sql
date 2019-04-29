@@ -27,9 +27,9 @@ CREATE TABLE userInfo (
  */
 
  INSERT INTO userInfo (name, weight, height, gender, BMI, calories_needed, calories_eaten) 
-               VALUES ("Yidah", 1.7, 1.6, "female", 32.3, 2000, 0);
+               VALUES ("Yidah", 58, 1.6, "female", 32.3, 2000, 0);
  INSERT INTO userInfo (name, weight, height, gender, BMI, calories_needed, calories_eaten) 
-               VALUES ("Carlos", 1.7, 1.6, "male", 32.3, 2500, 0);
+               VALUES ("Carlos", 65, 1.6, "male", 32.3, 2500, 0);
 
 
  /*

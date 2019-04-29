@@ -56,6 +56,7 @@ class TotalCalories extends Component {
         <Header />
         <h1>Calories Needed: {int}</h1>
         <h1>Calories Eaten: {calories_eaten}</h1>
+        <FoodSearch postData={this.props.postData} getAllCals={this.componentDidMount} />
       </div>
     )
   }
