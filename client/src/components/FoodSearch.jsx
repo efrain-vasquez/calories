@@ -44,7 +44,6 @@ class FoodSearch extends Component {
   handleSubmit = () => {
     this.getInfo(this.state.query)
   }
-
  {
       if (this.state.query.length >= 2) {
         if (this.state.query.length % 2 === 0) {

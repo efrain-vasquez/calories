@@ -65,14 +65,13 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/BMI' render={(props) => <BMI {...props} postData={this.postData} />} />
-            <Route exact path='/TotalCalories' component={TotalCalories} postData={this.postData} />
+            <Route exact path='/TotalCalories' postData={this.postData} component={TotalCalories} />
           </Switch>
         </div>
       </BrowserRouter>
     )
   }
 }
-
 // hot export works with RHL. Remove line 11 when starting fullstack integration
 export default hot(module)(App)
 // Uncomment line 13 & delete line 11 when starting fullstack integration

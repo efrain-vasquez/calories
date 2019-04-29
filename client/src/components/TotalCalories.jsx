@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header.jsx'
-import App from '../App.jsx'
+import FoodSearch from './FoodSearch.jsx'
 
 class TotalCalories extends Component {
   constructor (props) {
