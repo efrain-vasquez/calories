@@ -44,6 +44,7 @@ class FoodSearch extends Component {
   handleSubmit = () => {
     this.getInfo(this.state.query)
   }
+
  {
       if (this.state.query.length >= 2) {
         if (this.state.query.length % 2 === 0) {
@@ -85,20 +86,26 @@ class FoodSearch extends Component {
   }
 
 
- render() {
-   return (
-     <div>
-     <form>
-       <input
-         placeholder="Enter food item..."
-         ref={input => this.search = input}
-         onChange={this.handleInput}
-       />         
-     </form>
-        <Hints results={this.state.results} handleClick={this.handleClick}/>
-     </div>
-   )
- }
+  render() {
+    return (
+      <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+             <form>
+             <input class="input is-hovered is-info"
+              placeholder="Enter food item..."
+              ref={input => this.search = input}
+              onChange={this.handleInput}
+             />         
+             </form>
+             <Hints results={this.state.results} handleClick={this.handleClick}/>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 }
 
 export default FoodSearch;

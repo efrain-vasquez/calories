@@ -95,14 +95,13 @@ render() {
       <div>
       <div>
 
-     // CSS Header
       <div class="columns level-right">
         <div class="column is-two-fifths">
           <Header />
         </div>
       </div>
 
-        // CSS BMI info submit
+       
       <section class="section">
         <div class="field" class="columns">
           <div class="column is-one-quarter">
@@ -115,6 +114,7 @@ render() {
              name="name"
              value={name}
              onChange={this.handleInput}
+             autocomplete="off"
             />
           </div>
          </label>
@@ -133,6 +133,7 @@ render() {
              name="weight"
              value={weight}
              onChange={this.handleInput}
+             autocomplete="off"
             />
            </div>
          </label>
@@ -151,6 +152,7 @@ render() {
              name="height"
              value={height}
              onChange={this.handleInput}
+             autocomplete="off"
            />
           </div>
          </label>
@@ -172,14 +174,12 @@ render() {
            <option value="female">FEMALE</option>
            <option value="male">MALE</option>
          </select>
-
         <br />
          <button class="input is-hovered" placeholder="Hovered input" onClick={ this.handleSubmit } >SUBMIT</button>
          </div>
       </div>
       </div>
       </section>
-
          <h1>Your BMI is: { this.state.BMI } </h1>
          {console.log(this.state.ID)}
          <h2>Your BMI is considered to be: { ID } </h2>
